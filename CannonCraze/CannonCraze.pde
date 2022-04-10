@@ -30,6 +30,7 @@ PImage closeButton;
 PImage closeButtonHover;
 PImage flower;
 PImage github, githubHover;
+PImage icon;   //Game icon.
 
 PFont montserratRegular, montserratBold, playlistScript;
 
@@ -38,6 +39,8 @@ PShape cannonLogo;
 void setup() {
   size(740, 545);
   surface.setTitle("Cannon Craze");
+  icon = loadImage("icon.png");   //Load the icon.
+  surface.setIcon(icon);
   centreX = width / 2;
   centreY = height / 2;
   highScore = loadHighScore("high_score.txt");
